@@ -1,0 +1,5 @@
+elasticsearch (1.0.0.Beta2-1) unreleased; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 11 Dec 2013 10:47:06 +0100

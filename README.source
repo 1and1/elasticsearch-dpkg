@@ -1,0 +1,5 @@
+elasticsearch for Debian
+------------------------
+
+I don't use the maven plugin wich creates the debian package to be more flexible.
+

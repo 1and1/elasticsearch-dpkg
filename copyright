@@ -1,0 +1,18 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: elasticsearch
+Source: http://www.elasticsearch.org
+
+Files: *
+Copyright: 2009-2011 ElasticSearch
+           2009-2011 Shay Banon
+License: Apache License 2.0
+ On Debian systems, the complete text of the Apache License 2.0
+ can be found in "/usr/share/common-licenses/Apache-2.0".
+
+Files: debian/*
+Copyright: 2013 Andreas Wirooks <andreas.wirooks@1und1.de>
+           2009-2011 ElasticSearch
+           2009-2011 Shay Banon
+License: Apache License 2.0
+ On Debian systems, the complete text of the Apache License 2.0
+ can be found in "/usr/share/common-licenses/Apache-2.0".
