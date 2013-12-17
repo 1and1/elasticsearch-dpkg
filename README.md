@@ -7,6 +7,7 @@ The official elasticsearch configuration files are supplied and only adjusted to
 
 Create source packages step by step:
 
+```
 git clone https://github.com/elasticsearch/elasticsearch.git elasticsearch-1.0.0.Beta2
 cd elasticsearch-1.0.0.Beta2
 git checkout v1.0.0.Beta2
@@ -14,5 +15,6 @@ tar czf ../elasticsearch_1.0.0.Beta2.orig.tar.gz ../elasticsearch-1.0.0.Beta2
 git clone https://github.com/1and1/elasticsearch-dpkg.git debian
 cd ..
 dpkg-source -b elasticsearch-1.0.0.Beta2
+```
 
 Now the binary package can be built with dpkg-buildpackage or pbuilder the usual way.
