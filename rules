@@ -14,13 +14,16 @@
 
 override_dh_auto_build:
 	dh_auto_build
-	mvn clean package -DskipTests
+	mkdir -p /tmp/elasticsearch-maven
+	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean package -DskipTests
 	chmod 755 target/bin/elasticsearch
 	chmod 755 target/bin/elasticsearch.in.sh
 	chmod 755 target/bin/plugin
 
 override_dh_auto_clean:
 	dh_auto_clean
-	mvn clean
+	mkdir -p /tmp/elasticsearch-maven
+	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean
+	rm -fr /tmp/elasticsearch-maven
 	rm -f .local-execution-hints.log
 	rm -f dependency-reduced-pom.xml
