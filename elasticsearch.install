@@ -22,5 +22,3 @@ target/lib/lucene-sandbox-4.6.0.jar /usr/share/elasticsearch/lib
 target/lib/lucene-spatial-4.6.0.jar /usr/share/elasticsearch/lib
 target/lib/lucene-suggest-4.6.0.jar /usr/share/elasticsearch/lib
 target/lib/spatial4j-0.3.jar /usr/share/elasticsearch/lib
-lib/sigar/libsigar-amd64-linux.so usr/share/elasticsearch/lib/sigar
-lib/sigar/sigar-1.6.4.jar usr/share/elasticsearch/lib/sigar

@@ -9,8 +9,8 @@ Homepage: http://www.elasticsearch.org
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/elasticsearch.git;a=summary
 
 Package: elasticsearch
-Architecture: amd64
-Depends: ${misc:Depends}, adduser, openjdk-7-jre-headless | openjdk-7-jre
+Architecture: all
+Depends: ${misc:Depends}, adduser, coreutils, openjdk-7-jre-headless | openjdk-7-jre, libsigar-java, libsigar-java-jni
 Description: Open Source, Distributed, RESTful Search Engine
  ElasticSearch is a distributed RESTful search engine built for the cloud. 
  .
