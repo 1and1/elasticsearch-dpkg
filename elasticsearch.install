@@ -3,7 +3,7 @@ config/logging.yml etc/elasticsearch
 target/bin/elasticsearch usr/share/elasticsearch/bin
 target/bin/elasticsearch.in.sh usr/share/elasticsearch/bin
 target/bin/plugin usr/share/elasticsearch/bin
-target/elasticsearch-1.0.0.Beta2.jar /usr/share/elasticsearch/lib
+target/elasticsearch-1.0.0.RC1.jar /usr/share/elasticsearch/lib
 target/lib/jna-3.3.0.jar /usr/share/elasticsearch/lib
 target/lib/jts-1.12.jar /usr/share/elasticsearch/lib
 target/lib/log4j-1.2.17.jar /usr/share/elasticsearch/lib
