@@ -1,3 +1,19 @@
+elasticsearch (1.0.0.RC1-3) wheezy; urgency=low
+
+  * Changed distribution from unstable to wheezy to prevemt lintian error
+  * Removed dependancy to coreutils because it is an essential class package
+    and always installed. This also removes the lintian warning
+  * Created an lintian override for wrong-bug-number-in-closes because this
+    only makes sense when uploading to the official debian repository
+  * Created an lintian override for postrm-contains-additional-updaterc.d-calls
+    because the postrm script stops and removes the service but it is not
+    started and installed by the postinst script. At the moment i think this
+    behaviour is ok so puppet can install the package and the configuration
+    files and then call update-rc and start the service. The lintian override
+    script-in-etc-init.d-not-registered-via-update-rc.d addresses the same.
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Tue, 21 Jan 2014 14:44:44 +0100
+
 elasticsearch (1.0.0.RC1-2) unreleased; urgency=low
 
   * Added oracla java

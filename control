@@ -10,7 +10,7 @@ Homepage: http://www.elasticsearch.org
 
 Package: elasticsearch
 Architecture: all
-Depends: ${misc:Depends}, adduser, coreutils, oracle-java7-jre | openjdk-7-jre-headless | openjdk-7-jre, libsigar-java, libsigar-java-jni
+Depends: ${misc:Depends}, adduser, oracle-java7-jre | openjdk-7-jre-headless | openjdk-7-jre, libsigar-java, libsigar-java-jni
 Description: Open Source, Distributed, RESTful Search Engine
  ElasticSearch is a distributed RESTful search engine built for the cloud. 
  .
