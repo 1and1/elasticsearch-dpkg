@@ -1,10 +1,8 @@
 elasticsearch (1.0.0.RC1-3) wheezy; urgency=low
 
   * Changed distribution from unstable to wheezy to prevemt lintian error
-  * Removed dependancy to coreutils because it is an essential class package
+  * Removed dependency to coreutils because it is an essential class package
     and always installed. This also removes the lintian warning
-  * Created an lintian override for wrong-bug-number-in-closes because this
-    only makes sense when uploading to the official debian repository
   * Created an lintian override for postrm-contains-additional-updaterc.d-calls
     because the postrm script stops and removes the service but it is not
     started and installed by the postinst script. At the moment i think this
@@ -29,6 +27,6 @@ elasticsearch (1.0.0.RC1-1) unreleased; urgency=low
 
 elasticsearch (1.0.0.Beta2-1) unreleased; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 11 Dec 2013 10:47:06 +0100

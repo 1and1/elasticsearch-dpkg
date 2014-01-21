@@ -1,3 +1,2 @@
-elasticsearch: wrong-bug-number-in-closes l16:#nnnn
 elasticsearch: postrm-contains-additional-updaterc.d-calls etc/init.d/elasticsearch
 elasticsearch: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/elasticsearch
