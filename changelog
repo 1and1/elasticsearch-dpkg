@@ -1,3 +1,9 @@
+elasticsearch (1.0.0.RC2-1) wheezy; urgency=low
+
+  * Updated to 1.0.0.RC2
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Thu, 06 Feb 2014 15:03:01 +0100
+
 elasticsearch (1.0.0.RC1-3) wheezy; urgency=low
 
   * Changed distribution from unstable to wheezy to prevemt lintian error
