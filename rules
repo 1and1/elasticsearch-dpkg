@@ -19,6 +19,7 @@ override_dh_auto_build:
 	chmod 755 target/bin/elasticsearch
 	chmod 755 target/bin/elasticsearch.in.sh
 	chmod 755 target/bin/plugin
+	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean package -DskipTests -f elasticsearch-redis-river/pom.xml
 
 override_dh_auto_clean:
 	dh_auto_clean
@@ -27,3 +28,4 @@ override_dh_auto_clean:
 	rm -fr /tmp/elasticsearch-maven
 	rm -f .local-execution-hints.log
 	rm -f dependency-reduced-pom.xml
+	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean -f elasticsearch-redis-river/pom.xml
