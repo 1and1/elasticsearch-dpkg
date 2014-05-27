@@ -1,6 +1,6 @@
 elasticsearch (1.2.0-1) wheezy; urgency=low
 
-  * Updated to 1.1.2 and refreshed all patches
+  * Updated to 1.2.0 and refreshed all patches
 
  -- Andreas Wirooks <andreas.wirooks@1und1.de>  Tue, 27 May 2014 09:47:10 +0200
 
