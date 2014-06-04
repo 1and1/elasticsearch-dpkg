@@ -1,3 +1,9 @@
+elasticsearch (1.2.1-1) wheezy; urgency=low
+
+  * Updated to 1.2.1 wich is a security fix
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 04 Jun 2014 08:47:55 +0200
+
 elasticsearch (1.2.0-1) wheezy; urgency=low
 
   * Updated to 1.2.0 and refreshed all patches
