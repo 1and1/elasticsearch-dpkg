@@ -16,3 +16,13 @@ Copyright: 2013 Andreas Wirooks <andreas.wirooks@1und1.de>
 License: Apache License 2.0
  On Debian systems, the complete text of the Apache License 2.0
  can be found in "/usr/share/common-licenses/Apache-2.0".
+
+Files: elasticsearch-kopf/*
+Copyright: 2014 Leonardo Menezes
+License: The MIT License (MIT)
+ The license can be found in elasticsearch-kopf/LICENSE
+
+Files: elasticsearch-redis-river/*
+Copyright: 2014 Lee Adkins
+License: The MIT License (MIT)
+ The license can be found in elasticsearch-redis-river/LICENSE

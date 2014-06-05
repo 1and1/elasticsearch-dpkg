@@ -1,2 +1,9 @@
 elasticsearch: postrm-contains-additional-updaterc.d-calls etc/init.d/elasticsearch
 elasticsearch: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/elasticsearch
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/font-awesome/font/fontawesome-webfont.ttf
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/font-awesome/font/fontawesome-webfont.svg
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/src/kopf/theme-kopf.js
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/font-awesome/font/fontawesome-webfont.eot
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/font-awesome/font/fontawesome-webfont.woff
+elasticsearch: executable-not-elf-or-script usr/share/elasticsearch/plugins/kopf/_site/src/lib/ace/ace.js
+elasticsearch: extra-license-file usr/share/elasticsearch/plugins/kopf/_site/LICENSE
