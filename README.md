@@ -13,7 +13,7 @@ cd elasticsearch-1.2.1
 git checkout v1.2.1
 git clone https://github.com/lmenezes/elasticsearch-kopf.git
 cd elasticsearch-kopf
-git checkout v1.2
+git checkout v1.2.3
 cd ..
 git clone https://github.com/leeadkins/elasticsearch-redis-river.git
 cd elasticsearch-redis-river
