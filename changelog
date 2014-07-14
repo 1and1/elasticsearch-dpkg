@@ -1,9 +1,10 @@
-elasticsearch (1.2.1-2) wheezy; urgency=low
+elasticsearch (1.2.2-1) wheezy; urgency=low
 
+  * Updated to 1.2.2 and kopf to 1.2.3
   * Updated copyright files regarding the two plugins
   * Added lintian overrides for the two plugins
 
- -- Andreas Wirooks <andreas.wirooks@1und1.de>  Thu, 05 Jun 2014 14:10:27 +0200
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Fri, 11 Jul 2014 13:00:47 +0200
 
 elasticsearch (1.2.1-1) wheezy; urgency=low
 
