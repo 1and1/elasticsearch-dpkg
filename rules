@@ -13,7 +13,6 @@
 	dh $@ --with quilt
 
 override_dh_auto_build:
-	dh_auto_build
 	mkdir -p /tmp/elasticsearch-maven
 	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean package -DskipTests
 	chmod 755 target/bin/elasticsearch
@@ -22,10 +21,9 @@ override_dh_auto_build:
 	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean package -DskipTests -f elasticsearch-redis-river/pom.xml
 
 override_dh_auto_clean:
-	dh_auto_clean
 	mkdir -p /tmp/elasticsearch-maven
 	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean
+	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean -f elasticsearch-redis-river/pom.xml
 	rm -fr /tmp/elasticsearch-maven
 	rm -f .local-execution-hints.log
 	rm -f dependency-reduced-pom.xml
-	export MAVEN_OPTS="-Dmaven.repo.local=/tmp/elasticsearch-maven" && mvn clean -f elasticsearch-redis-river/pom.xml
