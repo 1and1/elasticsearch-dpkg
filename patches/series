@@ -1,3 +1,4 @@
 external-sigar.patch
 redis-river-internal-elasticsearch.patch
 exlude-plugins-from-ant-check.patch
+freshinstall.patch
