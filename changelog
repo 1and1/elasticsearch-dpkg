@@ -1,4 +1,4 @@
-elasticsearch (1.3.4-1) UNRELEASED; urgency=low
+elasticsearch (1.3.4-1) wheezy; urgency=low
 
   * Updated to 1.3.4
   * Updated kopf to 1.3.6
