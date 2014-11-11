@@ -1,6 +1,6 @@
 --- a/pom.xml
 +++ b/pom.xml
-@@ -569,6 +569,10 @@
+@@ -565,6 +565,10 @@
                                          <exclude name="**/org/elasticsearch/cluster/routing/shard_routes.txt"/>
                                          <exclude name="target/**/*"/>
                                          <exclude name=".metadata/**/*"/>
