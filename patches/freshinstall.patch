@@ -1,15 +1,25 @@
 --- a/src/deb/control/postinst
 +++ b/src/deb/control/postinst
-@@ -42,10 +42,8 @@
- 		startElasticsearch
+@@ -47,17 +47,12 @@
  	# this is a fresh installation
  	elif [ -z $2 ] ; then
--        echo "### NOT starting elasticsearch by default on bootup, please execute"
--        echo " sudo update-rc.d elasticsearch defaults 95 10"
--        echo "### In order to start elasticsearch, execute"
--        echo " sudo /etc/init.d/elasticsearch start"
-+        update-rc.d elasticsearch defaults 95 10
-+        /etc/init.d/elasticsearch start
+         if [ -x /bin/systemctl ] ; then
+-            echo "### NOT starting on installation, please execute the following statements to configure elasticsearch to start automatically using systemd"
+-            echo " sudo /bin/systemctl daemon-reload"
+-            echo " sudo /bin/systemctl enable elasticsearch.service"
+-            echo "### You can start elasticsearch by executing"
+-            echo " sudo /bin/systemctl start elasticsearch.service"
+-
++	    /bin/systemctl daemon-reload
++	    /bin/systemctl enable elasticsearch.service
++	    sudo /bin/systemctl start elasticsearch.service
+         elif [ -x /usr/sbin/update-rc.d ] ; then
+-            echo "### NOT starting elasticsearch by default on bootup, please execute"
+-            echo " sudo update-rc.d elasticsearch defaults 95 10"
+-            echo "### In order to start elasticsearch, execute"
+-            echo " sudo /etc/init.d/elasticsearch start"
++	    update-rc.d elasticsearch defaults 95 10
++	    /etc/init.d/elasticsearch start
+         fi
  	fi
  	;;
- esac

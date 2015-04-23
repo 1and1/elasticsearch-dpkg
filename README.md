@@ -8,21 +8,21 @@ The official elasticsearch configuration files are supplied and only adjusted to
 Create source packages step by step:
 
 ```
-git clone https://github.com/elasticsearch/elasticsearch.git elasticsearch-1.4.2
-cd elasticsearch-1.4.2
-git checkout v1.4.2
+git clone https://github.com/elasticsearch/elasticsearch.git elasticsearch-1.5.1
+cd elasticsearch-1.5.1
+git checkout v1.5.1
 git clone https://github.com/lmenezes/elasticsearch-kopf.git
 cd elasticsearch-kopf
-git checkout v1.4.3
+git checkout v1.5.0
 cd ..
 git clone https://github.com/leeadkins/elasticsearch-redis-river.git
 cd elasticsearch-redis-river
 git checkout v0.0.5
 cd ..
-tar czf ../elasticsearch_1.4.2.orig.tar.gz ../elasticsearch-1.4.2
+tar czf ../elasticsearch_1.5.1.orig.tar.gz ../elasticsearch-1.5.1
 git clone https://github.com/1and1/elasticsearch-dpkg.git debian
 cd ..
-dpkg-source -b elasticsearch-1.4.2
+dpkg-source -b elasticsearch-1.5.1
 ```
 
 Now the binary package can be built with dpkg-buildpackage or pbuilder the usual way.
